@@ -1,0 +1,26 @@
+#!/usr/bin/python
+#!-*-coding:utf-8-*-
+
+import socket
+import threading
+import time
+print ("\n\n[+] Iniciando o Simple Port Scanner [+]\n")
+def scan(port): (1)
+s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+res = s.connect_ex((ip, port))
+if resp == 0:
+serv = socket.getservbyport(port)
+print ("[+] Porta aberta encontrada: %d %s" % (port, string)
+s.close()
+ip = raw_input("Digite o IP para começar a brincadeira: ")
+print()
+time_start = time.time()
+for port in range(1, 1024): (3)
+if threading.active_count() > 700:
+time.sleep(1)
+t = threading.Thread(target=scan, args=(port,))
+t.setDaemon(true)
+t.start()
+print ("\n"*2)
+total_time = time.time() - time_start (4)
+prtin ("Scan concluida em %.2f seconds" % total_time)
